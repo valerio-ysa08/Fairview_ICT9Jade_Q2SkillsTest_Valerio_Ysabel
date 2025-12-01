@@ -49,10 +49,10 @@
 <br><br>
 
 <div class="container bg-warning text-light">
-    <p class ="fw-bold display-4">📝 Enroll</p>
+    <p class ="fw-bold display-4">📝 Enrollment Form</p>
     
     <blockquote>
-        <span class="lead">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        <span class="lead">Fill out the form below to enroll. 
   </span>
     </blockquote>
 
@@ -65,7 +65,7 @@
 <div class="row mb-3 mt-3">
     <div class="col">
 
-      <label for="fname">First Name</label>
+      <label for="fname">First Name:</label>
 
       <input type="fname" class="form-control" id="fname" placeholder="Enter your FIRST NAME" name="fname">
 
@@ -73,19 +73,40 @@
 
     <div class="col">
 
-      <label for="lname">Last Name</label>
+      <label for="lname">Last Name:</label>
 
       <input type="lname" class="form-control"
 
       id="lname" placeholder="Enter your LAST NAME" name="lname">
 
     </div>
+</div>
 
     <div class="col">
+
+      <label for="date">Date of Birth:</label>
+
+      <input type="date" class="form-control"
+
+      id="date" placeholder="dd/mm/yyyy" name="date">
+
+<div class="col">
+
+      <label for="sel1" class="form-label">Gender:</label>
+
+      <select class="form-select" id="sel1" placeholder="Select" name="sellist1">
       
+      <option>Female</option>
+
+      <option>Male</option>
+      
+    </select>
+
+    <div class="col">
+
       <label for="sel1" class="form-label">Grade Level:</label>
 
-      <select class="form-select" id="sel1" name="sellist1">
+      <select class="form-select" id="sel2" name="sellist2">
 
       <option>Grade 7</option>
 
@@ -102,33 +123,69 @@
     </div>
   </div>
 
+  <br><br>
 <h2>📞 Contact Details</h2>
-<div class="row mb-3 mt-3">
-<div class="col">
 
-<label for="pwd">Password:</label>
+    <div class="row mb-3 mt-3">
+    <div class="col">
 
-<input type="password" class="form-control"
+    <label for="email">Email Address:</label>
 
-id="pwd" placeholder="Enter password" name="pswd">
+    <input type="email" class="form-control"
 
-</div>
+    id="email" placeholder="student@example.com" name="email">
 
-<div class="form-check mb-3">
+    </div>
 
-<label class="form-check-label">
+    <div class="row mb-3 mt-3">
+    <div class="col">
 
-<input class="form-check-input" type="checkbox"
+    <label for="number">Contact Number:</label>
 
-name="remember"> Remember me
+    <input type="contact" class="form-control"
 
-</label>
+    id="contact" placeholder="0912-345-6789" name="contact">
 
-</div>
+    </div>
+  </div>
 
-<button type="submit" class="btn btn-
+  <br><br>
+<h2>📌 Other Information</h2>
 
-success">Submit</button>
+    <div class="row mb-3 mt-3">
+    <div class="col">
+
+    <label for=>Mode of Learning:</label>
+      <br>
+     	<input type="radio" id="online" name="mode">
+     	<label for="">Online</label>
+
+      <br>
+
+     	<input type="radio" id="face-to-face" name="mode">
+     	<label for="">Face-to-Face</label>
+
+    </div>
+  
+    <div class="row mb-3 mt-3">
+    <div class="col">
+    <div class="form-check">
+
+      <input type="checkbox" class="form-check-input" id="check1"
+
+      name="option1" value="checked">
+
+      <label class="form-check-label" for="check1" >I confirm that all information provided is true and complete.</label>
+
+      </div>
+
+    </label>
+
+    </div>
+
+    <div class="row mb-3 mt-3">
+    <div class="col">
+    <button type="submit" class="btn btn-success">Submit</button>
 
 </form>
 
